@@ -25,6 +25,7 @@
 
     <!-- Icon Font -->
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
 
 </head>
 
@@ -233,6 +234,15 @@
     <script src="js/jquery.countdown.js"></script>
 
     <script src="js/index.js"></script>
+    <script>
+        const tg = window.Telegram.WebApp;
+        tg.ready();
+        tg.expand();
+        tg.enableClosingConfirmation();
+        console.log(tg)
+        
+
+    </script>
 
 </body>
 
